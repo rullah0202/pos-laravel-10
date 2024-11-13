@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8" />
         <title>Logout  </title>
@@ -26,30 +25,28 @@
     </head>
 
     <body class="authentication-bg authentication-bg-pattern">
-
         <div class="account-pages mt-5 mb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-6 col-xl-4">
                         <div class="card bg-pattern">
-
                             <div class="card-body p-4">
                                 
-        <div class="text-center w-75 m-auto">
-            <div class="auth-logo">
-                <a href="{{route('dashboard')}}" class="logo logo-dark text-center">
-                    <span class="logo-lg">
-                        <img src="{{ asset('backend/assets/images/logo-dark.png') }}" alt="" height="22">
-                    </span>
-                </a>
+                                <div class="text-center w-75 m-auto">
+                                    <div class="auth-logo">
+                                        <a href="{{route('dashboard')}}" class="logo logo-dark text-center">
+                                            <span class="logo-lg">
+                                                <img src="{{ asset('backend/assets/images/logo-dark.png') }}" alt="" height="22">
+                                            </span>
+                                        </a>
 
-                <a href="index.html" class="logo logo-light text-center">
-                    <span class="logo-lg">
-                        <img src="{{ asset('backend/assets/images/logo-light.png') }}" alt="" height="22">
-                    </span>
-                </a>
-            </div>
-        </div>
+                                        <a href="index.html" class="logo logo-light text-center">
+                                            <span class="logo-lg">
+                                                <img src="{{ asset('backend/assets/images/logo-light.png') }}" alt="" height="22">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
 
                                 <div class="text-center">
                                     <div class="mt-4">
@@ -70,11 +67,11 @@
                         </div>
                         <!-- end card -->
 
-        <div class="row mt-3">
-            <div class="col-12 text-center">
-                <p class="text-white-50">Back to <a href="{{ route('login') }}" class="text-white ms-1"><b>Sign In</b></a></p>
-            </div> <!-- end col -->
-        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 text-center">
+                                <p class="text-white-50">Back to <a href="{{ route('login') }}" class="text-white ms-1"><b>Sign In</b></a></p>
+                            </div> <!-- end col -->
+                        </div>
                         <!-- end row -->
 
                     </div> <!-- end col -->
@@ -97,31 +94,29 @@
         <script src="{{ asset('backend/assets/js/app.min.js') }}"></script>
               
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-<script>
- @if(Session::has('message'))
- var type = "{{ Session::get('alert-type','info') }}"
- switch(type){
-    case 'info':
-    toastr.info(" {{ Session::get('message') }} ");
-    break;
+        <script>
+        @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type','info') }}"
+        switch(type){
+            case 'info':
+            toastr.info(" {{ Session::get('message') }} ");
+            break;
 
-    case 'success':
-    toastr.success(" {{ Session::get('message') }} ");
-    break;
+            case 'success':
+            toastr.success(" {{ Session::get('message') }} ");
+            break;
 
-    case 'warning':
-    toastr.warning(" {{ Session::get('message') }} ");
-    break;
+            case 'warning':
+            toastr.warning(" {{ Session::get('message') }} ");
+            break;
 
-    case 'error':
-    toastr.error(" {{ Session::get('message') }} ");
-    break; 
- }
- @endif 
-</script>
-
-
+            case 'error':
+            toastr.error(" {{ Session::get('message') }} ");
+            break; 
+        }
+        @endif 
+        </script>
     </body>
 </html>

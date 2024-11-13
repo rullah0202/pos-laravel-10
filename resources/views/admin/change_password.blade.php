@@ -3,10 +3,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 <div class="content">
-
     <!-- Start Content-->
     <div class="container-fluid">
-
         <!-- start page title -->
         <div class="row">
             <div class="col-12">
@@ -22,14 +20,11 @@
             </div>
         </div>     
         <!-- end page title -->
-
         <div class="row">
             <div class="col-lg-8 col-xl-8">
                 <div class="card">
                     <div class="card-body">
-                        
                         <!-- end timeline content-->
-
                         <div class="tab-pane" id="settings">
                             <form method="post" action="{{ route('update.password') }}" >
                                 @csrf
@@ -71,16 +66,12 @@
                             </form>
                         </div>
                         <!-- end settings content-->
-                 
                     </div>
                 </div> <!-- end card-->
-
             </div> <!-- end col -->
         </div>
         <!-- end row-->
-
     </div> <!-- container -->
-
 </div> <!-- content -->
 
 @endsection

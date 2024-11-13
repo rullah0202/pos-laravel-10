@@ -1,7 +1,6 @@
  <div class="navbar-custom">
     <div class="container-fluid">
         <ul class="list-unstyled topnav-menu float-end mb-0">
-
             <li class="d-none d-lg-block">
                 <form class="app-search">
                     <div class="app-search-box dropdown">
